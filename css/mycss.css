@@ -1,4 +1,110 @@
-h1 {
-  margin: 0; 
-  size: 12; 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+ul {
+  list-style-type: none; /* Вимкнення маркера списку (крапки) */
+  padding: 0; /* Вимкнення відступів зліва */
+}
+.nav-header a{
+  display: flex;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 0 5px;
+  border-radius: 5px;
+  transition: all .25s ease;
+}
+.nav-header a:visited{
+  color: white;
+}
+.nav-header a:link{
+  color:chartreuse; 
+}
+.nav-header a:hover{
+  background-color:violet;
+}
+
+.nav-header{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+  color: greenyellow;
+  width: 100%;
+  height: 50px;
+  
+
+}
+/* Стилі для полів вводу в стані фокусу */
+input:focus {
+  border: 2px solid #007bff; /* Зміна колір рамки при фокусі */
+  background-color: #f0f0f0; /* Зміна фонового кольору при фокусі */
+  outline: none; /* Видалення стандартного блима (focus outline) */
+}
+
+.main-info{
+  display: flex;
+  align-items: center;
+}
+.img-greeting {
+  height: 32.56vw;
+  display: flex;
+  align-items: center;
+}
+.img-greeting h1{
+  margin-left: 20px;
+  background-color: transparent;
+}
+.main-products{
+  display: flex;
+  z-index: 1;
+  background-color: #f0f0f0;
+  margin-left: 45vw;
+  margin-top: 19vw;
+}
+
+.img-greeting h1{
+  position: relative  ;
+  z-index: 1;
+  display: flex;
+  
+  /* height: 100%; */
+
+}
+.image-responsively-lazy{
+  position:  absolute;
+  z-index: 0;
+  width: 100%;
+}
+
+.news-blocks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+.news-blocks article{
+  background-color:darksalmon ;
+  width: 350px;
+  height: 400px;
+  margin: 15px;
+}
+.news-blocks article:first-child {
+  color: crimson;
+}
+
+.news-blocks article:last-of-type {
+  color: darkmagenta;
+}
+
+.news-blocks article::first-letter{ 
+  font-size: 50px;
+}
+.news-blocks article::first-line{ 
+  text-decoration: overline;
+}
+
+
