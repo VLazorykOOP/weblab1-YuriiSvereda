@@ -107,4 +107,15 @@ article{
   text-decoration: overline;
 }
 
-
+/* .main-table{
+  border-style: double;
+}
+.main-table tr{
+  border-style: double;
+}
+.main-table td{
+  border-style: double;
+} */
+table, th, td, caption {
+  border: 1px solid black;
+}
