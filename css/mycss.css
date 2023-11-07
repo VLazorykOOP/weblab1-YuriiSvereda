@@ -107,15 +107,21 @@ article{
   text-decoration: overline;
 }
 
-/* .main-table{
-  border-style: double;
-}
-.main-table tr{
-  border-style: double;
-}
-.main-table td{
-  border-style: double;
-} */
 table, th, td, caption {
   border: 1px solid black;
+}
+ .reports-blocks{
+  display: flex;
+  justify-content: center;
+  
+ }
+ .reports-blocks a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+ .reports-blocks a img{
+  width: 225px;
+  height: 225px;
 }
