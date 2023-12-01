@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h1>Звіт №5</h1>
+        <h3>HTML-структура форми:</h3>
+        <img src="../imgs-for-reports/Знімок екрана 2023-12-01 123302.png" alt="код">
+        <h4>Елементи форми:</h4>
+        <h5>Назва товару (Name of the item):</h5>
+        <p>
+            Елемент: &lt;input type="text" id="productName" name="productName" required&gt;
+            Опис: Поле для введення назви товару. Обов'язкове для заповнення.
+        </p>
+        <h5>Опис товару (Description of the item):</h5>
+        <p>
+            Елемент: &lt;textarea id="productDescription" name="productDescription" cols="30" rows="5"&gt;&lt;/textarea&gt;
+            Опис: Текстове поле для опису товару.
+        </p>
+        <h5>Пароль (Password):</h5>
+        <p>
+            Елемент: &lt;input id="password" type="password" name="Password"&gt;
+            Опис: Поле для введення паролю.
+        </p>
+        <h5>Ціна товару (Price of the item):</h5>
+        <p>
+            Елемент: &lt;input type="number" id="productPrice" name="productPrice" min="0" step="0.01" required&gt;
+            Опис: Поле для введення ціни товару. Можливість вводу лише числових значень.
+        </p>
+        <h5>Категорія товару (Item category):</h5>
+        <p>
+            Елемент: &lt;select id="productCategory" name="productCategory" required&gt; ... &lt;/select&gt;
+            Опис: Випадаючий список для вибору категорії товару. Обов'язково для вибору одного варіанту.
+        </p>
+        <h5>Зображення товару (Item image):</h5>
+        <p>
+            Елемент: &lt;input type="file" id="productImage" name="productImage" accept="image/*"&gt;
+            Опис: Поле для завантаження зображення товару. Приймає файли з розширенням зображень.
+        </p>
+        <h5>Поле метра (Meter field):</h5>
+        <p>
+            Елемент: &lt;meter min="0" max="100" low="30" high="70" optimum="50" value="68" style="width: 200px;" class="product-meter"&gt;&lt;/meter&gt;
+            Опис: Показник, який відображає числове значення у вигляді смужки.
+        </p>
+        <h5>Кнопка "відправити інформацію" та "Submit":</h5>
+        <p>
+            Елементи: &lt;input type="Submit" value="відправити інформацію"&gt; та &lt;button type="submit" form="productForm" formmethod="post" formenctype="multipart/form-data" formtarget="_blank" value="Submit"&gt;Submit&lt;/button&gt;
+            Опис: Кнопки для відправлення форми інформації.
+        </p>
+        
+        <h3>Висновок</h3>
+        <p>
+            виконавши роботу я навчився створювати та редагувати форми з різними компонентами за допомогою html
+        </p>
+        <br>
+        адреса репозиторію: <a href="https://github.com/VLazorykOOP/weblab1-YuriiSvereda">https://github.com/VLazorykOOP/weblab1-YuriiSvereda</a>
+    </body>
+</html>
