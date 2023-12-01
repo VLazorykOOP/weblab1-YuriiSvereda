@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../weblab1-YuriiSvereda/css/mycss.css">
+  <title>Форма введення інформації про товари</title>
+</head>
+<body>
+  <header>
+    <nav id="nav-header">
+      <a href="index.html">Company inormation</a>
+      <a href="authorInfo.html">info about author</a>
+      <a href="factoryNews.html">News</a>
+      <a href="menu.html">Menu</a>
+      <a href="tables.html">Tables</a>
+      <a href="form.html">Form</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+  <main>
+    <form id="productForm" accept-charset="UTF-8" style="width: 80%;" class="product-form" name="productForm" action="#">
+      <fieldset>
+        <legend id="formLegend" style="font-weight: bold;">Information about item</legend>
+        <label for="productName" lang="en" title="Назва товару">Name of the item</label>
+        <input type="text" id="productName" name="productName" required>
+        <br><br>
+        
+        <label for="productDescription" lang="en" title="Опис товару">Description of the item:</label>
+        <textarea id="productDescription" name="productDescription" cols="30" rows="5"></textarea>
+        <br><br>
+  
+        <label for="password">Pa*sw*rd</label>
+        <input id="password" type="password" name="Password">
+        <br><br>
+        
+        <label for="productPrice" lang="en" title="Price of the item">Price of the item:</label>
+        <input type="number" id="productPrice" name="productPrice" min="0" step="0.01" required>
+        <br><br>
+        
+        <label for="productCategory" lang="en" title="Item categori">Item categori:</label>
+        <select id="productCategory" name="productCategory" required>
+          <datalist id="productList" lang="en" dir="ltr" title="list of items">
+              <option value="shakes">Shakes</option>
+              <option value="beer">Beer</option>
+              <option value="wines">Wines</option>
+          </datalist>  
+        </select>
+        <br><br>
+        
+        <label for="productImage" lang="en" title="item img">Item img:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*">
+        <br><br>
+  
+        <meter min="0" max="100" low="30" high="70" optimum="50" value="68" style="width: 200px;" class="product-meter"></meter>
+        <br><br>
+        
+        <input type="Submit" value="відправити інформацію">
+        <button type="submit" form="productForm" formmethod="post" formenctype="multipart/form-data" formtarget="_blank" value="Submit">Submit</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
