@@ -125,3 +125,11 @@ table, th, td, caption {
   width: 225px;
   height: 225px;
 }
+
+/* .qwerty {
+  transition: transform 10s;
+}
+
+.qwerty:hover {
+  transform: scale(1.5)
+} */

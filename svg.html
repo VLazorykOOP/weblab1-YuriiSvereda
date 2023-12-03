@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="../weblab1-YuriiSvereda/css/mycss.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <a href="index.html">Company inormation</a>
+            <a href="authorInfo.html">info about author</a>
+            <a href="factoryNews.html">News</a>
+            <a href="menu.html">Menu</a>
+            <a href="tables.html">Tables</a>
+            <a href="form.html">Form</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+    <main>
+        <br><br>
+        <!-- xmlns="http://www.w3.org/2000/svg" -->
+        <svg width="1150" height="1050" >
+          <!-- Ось X -->
+          <line x1="0" y1="500" x2="1100" y2="500" stroke="black" stroke-width="2" />
+          <!-- Ось Y -->
+          <line x1="500" y1="0" x2="500" y2="1000" stroke="black" stroke-width="2" />
+          
+          <!-- Фігури -->
+          <circle cx="650" cy="250" r="50" fill="#ED6E46">
+            <animate attributeName="cx" from="650" to="950" dur="10s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="950" cy="250" r="50" fill="#ED6E46" />
+
+          <ellipse cx="800" cy="400" rx="200" ry="100" fill="#ED6E46">
+            <animate attributeName="rx" dur="6s" repeatCount="indefinite"
+             values="200; 0; 200" keyTimes="0; 0.5; 1" />
+          </ellipse>
+
+          <rect  x="500" y="300" width="100" height="100" fill="#ED6E46">
+            <animateTransform attributeName="transform" attributeType="XML"type="rotate" from="0 550 350" to="360 550 350" dur="3s" repeatCount="indefinite" />      
+          </rect>
+          <rect x="1000" y="300" width="100" height="100" fill="#ED6E46"/>
+          <rect x="700" y="500" width="200" height="100" fill="#ED6E46"/>
+
+          <circle cx="700" cy="550" r="50" fill="#ED6E46" />
+          <circle cx="900" cy="550" r="50" fill="#ED6E46">
+            <animate attributeName="r" from="50" to="150" dur="0.3s" repeatCount="indefinite" />
+          </circle>
+
+          <rect x="900" y="600" width="100" height="100" fill="#ED6E46"/>
+          <rect x="600" y="600" width="100" height="100" fill="#ED6E46"/>
+          
+          <!-- Позначення для осі X -->
+          <text x="1000" y="490">5</text>
+          <text x="900" y="490">4</text>
+          <text x="800" y="490">3</text>
+          <text x="700" y="490">2</text>
+          <text x="600" y="490">1</text>
+          
+          <text x="480" y="520">0</text>
+          
+          <text x="400" y="490">-1</text>
+          <text x="300" y="490">-2</text>
+          <text x="200" y="490">-3</text>
+          <text x="100" y="490">-4</text>
+          <text x="0" y="490">-5</text>
+
+          <!-- Позначення для осі Y -->
+          <text x="480" y="1000">-5</text>
+          <text x="480" y="900">-4</text>
+          <text x="480" y="800">-3</text>
+          <text x="480" y="700">-2</text>
+          <text x="480" y="600">-1</text>
+
+          <text x="480" y="520">0</text>
+
+          <text x="480" y="400">1</text>
+          <text x="480" y="300">2</text>
+          <text x="480" y="200">3</text>
+          <text x="480" y="100">4</text>
+          <text x="480" y="15">5</text>
+
+        </svg>
+    </main>
+</body>
+</html>
