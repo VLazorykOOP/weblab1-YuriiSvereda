@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>authorInfo</title>
     <link rel="stylesheet" href="../weblab1-YuriiSvereda/css/mycss.css">
+    <!-- <script>
+        window.onload = function() {
+            alert("СТОРІНКУ ЗАВАНТАЖЕНО >:)");
+        };
+    </script> -->
 </head>
 <body>
     <header>
@@ -16,6 +21,7 @@
             <a href="menu.html">Menu</a>
             <a href="tables.html">Tables</a>
             <a href="form.html">Form</a>
+            <a href="svg.html">SVG</a>
             <a href="reports.html">Reports</a>
         </nav>
     </header>
@@ -31,7 +37,39 @@
         <br><b style="font-family: serif; color: blue;" title="it's so cute">I have a hamster</b><br>
         <tt id="hamster'sName" title="This is an old Ukrainian name" lang="en">its name is Mokryna</tt>
         <input type="text" id="myInput" placeholder="Введіть текст">
+        
+        <input type="text" id="focusInput" placeholder="дай фокус">
+        <p>Розмір вікна: <span id="windowSize"></span></p>
+        <br><br>
 
-    </main>
+        <div class="element" 
+            ondblclick="handleEvent('Подвійний клік', this)"
+            ondrag="handleEvent('Перетягування', this)"
+            ondragend="handleEvent('Завершення перетягування', this)"
+            ondragenter="handleEvent('Наближення до області перетягування', this)"
+            ondragleave="handleEvent('Виїзд з області перетягування', this)"
+            ondragover="handleEvent('Наведення на область перетягування', this)"
+            ondragstart="handleEvent('Початок перетягування', this)"
+            ondrop="handleEvent('Відпускання об`єкту', this)"
+            onmousemove="handleEvent('Рух миші', this)"
+            onmouseout="handleEvent('Виїзд миші з елементу', this)"
+            onmouseover="handleEvent('Наведення миші на елемент', this)"
+            onmousewheel="handleEvent('Колесо миші', this)"
+            onscroll="handleEvent('Прокручування сторінки', this)"
+            draggable="true">
+            Елемент
+        </div>
+        <form>
+            <textarea id="output" rows="10" cols="50"></textarea><br>
+            <button onclick="runTask()">Run Task</button>
+          </form>
+          <br><br>
+          <form id="searchForm">
+            <label for="inputText">Введіть текст:</label><br>
+            <textarea id="inputText" rows="4" cols="50"></textarea><br>
+            <button type="button" onclick="searchInfo()">Пошук інформації</button>
+          </form>
+
+    <script src="../weblab1-YuriiSvereda/js/myscript.js"></script>
 </body>
 </html>

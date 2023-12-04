@@ -126,10 +126,12 @@ table, th, td, caption {
   height: 225px;
 }
 
-/* .qwerty {
-  transition: transform 10s;
+.element{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
 }
-
-.qwerty:hover {
-  transform: scale(1.5)
-} */
